@@ -1,0 +1,36 @@
+
+Welcome to Gradle 8.7!
+
+Here are the highlights of this release:
+ - Compiling and testing with Java 22
+ - Cacheable Groovy script compilation
+ - New methods in lazy collection properties
+
+For more details see https://docs.gradle.org/8.7/release-notes.html
+
+Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
+
+> Configure project :app
+ksp-2.0.0-1.0.24 is too old for kotlin-2.0.10. Please upgrade ksp or downgrade kotlin-gradle-plugin to 2.0.0.
+ksp-2.0.0-1.0.24 is too old for kotlin-2.0.10. Please upgrade ksp or downgrade kotlin-gradle-plugin to 2.0.0.
+ksp-2.0.0-1.0.24 is too old for kotlin-2.0.10. Please upgrade ksp or downgrade kotlin-gradle-plugin to 2.0.0.
+ksp-2.0.0-1.0.24 is too old for kotlin-2.0.10. Please upgrade ksp or downgrade kotlin-gradle-plugin to 2.0.0.
+ksp-2.0.0-1.0.24 is too old for kotlin-2.0.10. Please upgrade ksp or downgrade kotlin-gradle-plugin to 2.0.0.
+ksp-2.0.0-1.0.24 is too old for kotlin-2.0.10. Please upgrade ksp or downgrade kotlin-gradle-plugin to 2.0.0.
+ksp-2.0.0-1.0.24 is too old for kotlin-2.0.10. Please upgrade ksp or downgrade kotlin-gradle-plugin to 2.0.0.
+ksp-2.0.0-1.0.24 is too old for kotlin-2.0.10. Please upgrade ksp or downgrade kotlin-gradle-plugin to 2.0.0.
+ksp-2.0.0-1.0.24 is too old for kotlin-2.0.10. Please upgrade ksp or downgrade kotlin-gradle-plugin to 2.0.0.
+ksp-2.0.0-1.0.24 is too old for kotlin-2.0.10. Please upgrade ksp or downgrade kotlin-gradle-plugin to 2.0.0.
+
+> Task :dependencies
+
+------------------------------------------------------------
+Root project 'Smart-MR'
+------------------------------------------------------------
+
+No configurations
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 7s
+1 actionable task: 1 executed

@@ -13,9 +13,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.lifecycleScope
 import com.medisage.smart_mr.domain.usecases.AppEntryUseCases
 import com.medisage.smart_mr.presentation.onboardinng.OnBoardingScreen
+import com.medisage.smart_mr.presentation.onboardinng.OnBoardingViewModel
 import com.medisage.smart_mr.ui.theme.SmartMRTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -23,16 +25,18 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
     @Inject
-    lateinit var appEntryUseCases: AppEntryUseCases
+    lateinit var useCases: AppEntryUseCases
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
         installSplashScreen()
+
         lifecycleScope.launch {
-            appEntryUseCases.readAppEntry().collect{
-                Log.d("Test",it.toString())
+            useCases.readAppEntry().collect{
+                Log.d("test", it.toString())
             }
         }
         setContent {
@@ -40,7 +44,10 @@ class MainActivity : ComponentActivity() {
                 dynamicColor = false
             ) {
                 Box(modifier = Modifier.background(MaterialTheme.colorScheme.background)) {
-                    OnBoardingScreen()
+                   val viewModel: OnBoardingViewModel = hiltViewModel()
+                    OnBoardingScreen(
+                        event = viewModel::onEvent
+                    )
                 }
             }
         }
@@ -52,7 +59,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun OnBoardingPagePreview(){
     SmartMRTheme {
-        OnBoardingScreen()
+       //OnBoardingScreen()
     }
 }
 

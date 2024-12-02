@@ -1,4 +1,4 @@
-package com.medisage.smart_mr.domain.usecases
+package com.medisage.smart_mr.domain.usecases.app_entry
 
 data class AppEntryUseCases (
     val readAppEntry: ReadAppEntry,

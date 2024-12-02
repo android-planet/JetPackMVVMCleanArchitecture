@@ -100,4 +100,27 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
+
+    implementation(libs.accompanist.systemuicontroller)
+
+    // Retrofit for API requests
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    // ViewModel and LiveData for MVVM architecture
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.livedata)
+
+    //Paging 3
+   // def paging_version = "3.1.1"
+    implementation(libs.androidx.paging.runtime)
+    implementation(libs.androidx.paging.compose)
+
+    //Room
+    //def room_version = "2.5.2"
+    implementation(libs.androidx.room.runtime)
+    kapt(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+
+    implementation(libs.coil.compose)
+
 }

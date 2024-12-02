@@ -2,10 +2,10 @@
 <resources>
 
     <style name="Theme.SmartMR" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="windowSplashScreenBackground">@color/black</item>
+       <!-- <item name="windowSplashScreenBackground">@color/black</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/baseline_add_call_24</item>
         <item name="windowSplashScreenAnimationDuration">300</item>
-        <item name="postSplashScreenTheme">@style/Theme.SmartMR.NoActionBar</item>
+        <item name="postSplashScreenTheme">@style/Theme.SmartMR.NoActionBar</item>-->
     </style>
 
     <style name="Theme.SmartMR.NoActionBar" parent="android:Theme.Material.Light.NoActionBar">

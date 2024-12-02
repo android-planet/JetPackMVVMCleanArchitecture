@@ -2,7 +2,7 @@ package com.medisage.smart_mr.presentation.onboardinng
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.medisage.smart_mr.domain.usecases.AppEntryUseCases
+import com.medisage.smart_mr.domain.usecases.app_entry.AppEntryUseCases
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

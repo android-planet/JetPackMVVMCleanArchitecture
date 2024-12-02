@@ -1,4 +1,4 @@
-package com.medisage.smart_mr.domain.usecases
+package com.medisage.smart_mr.domain.usecases.app_entry
 
 import com.medisage.smart_mr.domain.manager.LocalUserManager
 
